@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monet SPA</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="flex-wrapper">
+    <div class="grid-container">
+      <header class="header" id="header">
+        <h1>Claude Monet - His Life and Works</h1>
+      </header>    
+      <nav class="top-nav">
+        <ul>
+          <li>
+            <a href="#" data-menu="bio">Biography</a>
+            <div class="submenu" id="bio-submenu">
+              <ul>
+                <li><a href="#" data-target="early-years">Early Years</a></li>
+                <li><a href="#" data-target="middle-period">Middle Period</a></li>
+                <li><a href="#" data-target="late-life">Late Life</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-menu="paintings">Paintings</a>
+            <div class="submenu" id="paintings-submenu">
+              <ul>
+                <li><a href="#" data-target="landscapes">Landscapes</a></li>
+                <li><a href="#" data-target="water-lilies">Water Lilies</a></li>
+                <li><a href="#" data-target="other-works">Other Works</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-menu="exhibitions">Exhibitions</a>
+            <div class="submenu" id="exhibitions-submenu">
+              <ul>
+                <li><a href="#" data-target="exhibitions-current">Current</a></li>
+                <li><a href="#" data-target="exhibitions-past">Past</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-menu="links">Links</a>
+            <div class="submenu" id="links-submenu">
+              <ul>
+                <li><a href="#" data-target="links-web">Web</a></li>
+                <li><a href="#" data-target="links-books">Books</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#" data-menu="admin">Account</a>
+            <div class="submenu" id="admin-submenu">
+              <ul>
+                <li><a href="#" id="showSignInModal">Sign in</a></li>
+                <li><a href="#" id="showSignUpModal">Sign up</a></li>
+                <li><a href="#" id="signOutLink">Sign out</a></li>
+                <li><a href="#" id="manageExhibitionsLink">Manage Exhibitions</a></li>
+                <li><a href="#" id="manageLinksLink">Manage Links</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Κύριο Περιεχόμενο -->
+      <main class="main-content">
+        <div id="content-area">
+          <h2>Welcome to this page on painter Claude Monet</h2>
+          <p>Select any option from the menu to begin</p>
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Monet SPA. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- SIGN-IN ΜΟΝΤΕΛΟ -->
+  <div id="signInModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignInModal">&times;</span>
+      <h2>Sign In</h2>
+      <label for="signin-username">Username</label>
+      <input type="text" id="signin-username" placeholder="Enter username" />
+      <label for="signin-password">Password</label>
+      <input type="password" id="signin-password" placeholder="Enter password" />
+      <button id="signInBtn">Sign In</button>
+    </div>
+  </div>
+
+  <!-- SIGN-UP ΜΟΝΤΕΛΟ -->
+  <div id="signUpModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignUpModal">&times;</span>
+      <h2>Create an Account</h2>
+      <label for="signup-username">Username</label>
+      <input type="text" id="signup-username" placeholder="Choose username" />
+      <label for="signup-password">Password</label>
+      <input type="password" id="signup-password" placeholder="Choose password" />
+      <button id="signUpBtn">Sign Up</button>
+    </div>
+  </div>
+
+  <!--Scripts που θα χρειαστώ -->
+  <script src="/app.js"></script>
+</body>
+</html>
